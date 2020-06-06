@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Home Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="physics-style.css" />
+<script>
+function start(){
+var name=document.getElementById("name").value;
+localStorage.setItem("name", name);
+var subject=document.getElementById("subject").value;
+switch(subject){
+ case "Lesson 1": window.open("English Question.html", "_self"); break;
+ case "Lesson 2":window.open("Mathematics question.html", "_self"); break;
+ case "Lesson 3":window.open("Physics question.html", "_self"); break;
+ case "Lesson 4":window.open("Chemistry question.html", "_self"); break;
+ case "Lesson 5":window.open("Biology question.html", "_self"); break;
+ case "Lesson 6":window.open("Economics question.html", "_self"); break;
+ case "Lesson 7":window.open("Civic question.html", "_self"); break;
+ case "Lesson 8":window.open("Government question.html", "_self"); break;
+ case "Lesson 9":window.open("Literature question.html", "_self"); break;
+ case "":window.open(" question.html", "_self"); break;
+ default:alert("Select a Subject");
+ }
+//alert(name);
+}
+</script>
+</head>
+<body class="hbody">
+<div class="body-container">
+    <div class="com-name">
+        <img src="photo/educational.png" alt="company logo">
+        <p>samson educational resources</p>
+    </div>
+    <div class="container">
+        <div class="main-content" style="text-align: center; text-transform: capitalize;">
+            <p > Welcome To <br>samson educational resources</p>
+            <p align="center"> Enter Your name <br><input type="text" id="name" /></p>
+            
+             <p>Select the  test you would like to take a test on:<br>
+               <select id="subject">
+               <option hidden >--Select Test--</option>
+               <option  value="Lesson 1">Lesson 1 </option>
+               <option  value="Lesson 2"> Lesson 2</option>
+               <option hidden value="Lesson 3">Lesson3 </option>
+               <option hidden value="Lesson 4">lesson 4 </option>
+               <option hidden value="Lesson 5">Lesson 5</option>
+               <option hidden value="Lesson 6">Lesson 6 </option>
+               <option hidden value="Lesson 7">Lesson 7</option>
+               <option hidden value="Lesson 8">Lesson 8</option>
+               <option hidden value="Lesson 9">Lesson 9 </option>
+               </select>
+               </p>
+               <p>  answer all question within the allocated time<br>
+                   Make sure you submit before the clock hit zero.</p>
+                   <b>GOOD LUCK</b>
+            <p  ><button onclick="start()">Start Test</button></p>
+        </div>
+    </div>
+    <div class="about">
+        <div class="about-img">
+            <img src="photo/me.png" width="50px"/>
+        </div>
+        <div class="info">
+            <p>Tel: 08102545216</p><p>Email: Samsonoyebamiji02@gmail.com</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
