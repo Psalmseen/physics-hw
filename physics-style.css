@@ -53,6 +53,7 @@ body *{
 }
 .name{
     flex: 0 0 200px;
+    max-width: 25vw;
     box-sizing: border-box;
     background: rgba(0, 120, 0, 0.8 );
     padding:10px;
