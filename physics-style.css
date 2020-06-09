@@ -44,6 +44,9 @@ body *{
     text-align: left;
     
 }
+.main-content p{
+    text-align: left;
+}
 #submit{
     margin-top: auto;
     text-align: center;
