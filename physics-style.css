@@ -38,13 +38,15 @@ body *{
 .main-content{
     display: flex;
     flex-direction: column;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     margin-left: 5px;
     color: black;
-    text-align: center;
+    text-align: left;
+    
 }
-.main-content p{
+#submit{
     margin-top: auto;
+    text-align: center;
 }
 .name{
     flex: 0 0 200px;
@@ -89,9 +91,6 @@ img{
 
     .name{
         flex: 0 0 100px;
-    }
-    .container input{
-        display: block;
     }
     .com-name img{
         height: 100px;

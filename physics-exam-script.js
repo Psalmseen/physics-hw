@@ -28,12 +28,12 @@ function timer(n){//n is count down time in min
        score="You got "+count+" questions correctly. <br> You failed question(s) <br>"+failed;
      //  result.innerHTML=score;
              localStorage.setItem("score",score);   
-             window.open("Result page.html", "_self");   }
+             window.open("physics-result-page.html", "_self");   }
      function duration(min){
     window.onload=setTimeout(ans, min*60000);
     window.onload=timer(min);
     if (window.performance.navigation.type == 1){
-    window.open("Homepage.html", "_self")
+    window.open("physics-homepage.html", "_self")
     }//this checks for reload and goes back to homepage
     }
     

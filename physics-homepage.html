@@ -5,14 +5,19 @@
 <title>Home Page</title>
 <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="physics-style.css" />
+<style>
+    .main-content p{
+        margin-top: auto;
+    }
+</style>
 <script>
 function start(){
 var name=document.getElementById("name").value;
 localStorage.setItem("name", name);
 var subject=document.getElementById("subject").value;
 switch(subject){
- case "Lesson 1": window.open("English Question.html", "_self"); break;
- case "Lesson 2":window.open("Mathematics question.html", "_self"); break;
+ case "Lesson 1": window.open("Physics-lesson.html", "_self"); break;
+ case "Lesson 2":window.open("#", "_self"); break;
  case "Lesson 3":window.open("Physics question.html", "_self"); break;
  case "Lesson 4":window.open("Chemistry question.html", "_self"); break;
  case "Lesson 5":window.open("Biology question.html", "_self"); break;
